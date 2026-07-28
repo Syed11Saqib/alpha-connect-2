@@ -47,3 +47,7 @@ Before ending any session:
 - Do not explain concepts unless requested.
 - Do not repeat architecture summaries.
 - Implement exactly one checkpoint per request.
+
+Never read every file in the repository.
+
+Determine the minimum required files for the current checkpoint and read only those.
