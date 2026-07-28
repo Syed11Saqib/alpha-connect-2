@@ -48,6 +48,35 @@ Before ending any session:
 - Do not repeat architecture summaries.
 - Implement exactly one checkpoint per request.
 
+## Mandatory Pre-Commit Review
+
+Before considering any checkpoint complete:
+
+1. Review your own implementation.
+2. Search for architectural violations.
+3. Search for scope creep.
+4. Search for placeholder code.
+5. Search for TODOs.
+6. Search for duplicated logic.
+7. Search for unnecessary dependencies.
+8. Verify all changed files belong to the current checkpoint.
+9. Suggest corrections.
+10. Apply corrections after user approval.
+
+## Mandatory Validation
+
+A checkpoint is NOT complete until:
+
+1. Self review passes.
+2. All Definition of Done requirements are satisfied.
+3. Local build/test succeeds.
+4. If validation fails, determine whether:
+   - the implementation is incorrect, or
+   - the checkpoint documentation is incorrect.
+
+Never assume.
+Always verify against IMPLEMENTATION_GUIDE.md.
+
 Never read every file in the repository.
 
 Determine the minimum required files for the current checkpoint and read only those.

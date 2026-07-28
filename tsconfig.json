@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "ES2022"
+  }
+}
